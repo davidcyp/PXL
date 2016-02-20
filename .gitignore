@@ -1,0 +1,10 @@
+.DS_Store
+OEFENINGEN/1_maven/ExecutableJar/.idea
+OEFENINGEN/1_maven/ExecutableJar/target
+FirstApplication.iml
+OEFENINGEN/1_maven/FirstApplication/.idea
+OEFENINGEN/1_maven/FirstApplication/target
+CodeUnderTest.iml
+OEFENINGEN/2_junit/CodeUnderTest/.idea
+OEFENINGEN/2_junit/CodeUnderTest/target
+OEFENINGEN/maven/ExecutableJar/.idea
