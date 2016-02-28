@@ -32,4 +32,6 @@
 - Ga naar be.pxl.les2.api_begrijpen
 - Schrijf een test voor elke methode (en leer zo oa de api begrijpen, je kan nl. geen wagen starten zonder dat er brandstof in de wagen is)
 
-## Oefening 6: PENDING (koffiemachine voorbeeld)
+## Oefening 6 : http://osherove.com/tdd-kata-1/
+
+## EXTRA: zie https://app.pluralsight.com/library/courses/java-unit-testing-junit/exercise-files
