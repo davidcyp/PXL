@@ -24,6 +24,7 @@ public class CalculatorPowerOfTwoWithMockitoSolutionTest {
 
     @Test
     public void testCalculatorDelegatesToScientificCalculator(){
+
         calculator.powerOfTwo(3);
 
         /**
