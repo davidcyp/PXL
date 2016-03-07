@@ -53,6 +53,28 @@ Of als je het 'the hard way' wil doen, dan kan je ook:
 - Maak een class waarmee je een collection van deejays kan toevoegen aan de tabel 'deejay'
 - Maak hiervoor gebruik van een prepared statement waarin je dynamisch dj naam en genre invult
 
+## Oefening 6: Transacties
+- Maak op je eigen database een tabel 'bankrekening' aan
+- Voeg aan de tabel 'rekening' 2 velden toe (rekeningnummer, saldo)
+- Voeg 2 records toe: [rekeningnummer:1, saldo: 1000],[rekeningnummer:2, saldo:200] (via SQL, phpmyadmin,..of via een statement mag ook natuurlijk)
+- Schrijf een class die een connectie maakt naar jouw database.
+- Voeg volgende code toe aan je class:
+```java
+statement.executeUpdate("UPDATE bankrekening SET saldo = 800 WHERE rekeningnummer = 1");
+if(true) throw new Exception("Oei, de data is nog niet gecommit en er loopt iets fout");
+statement2.executeUpdate("UPDATE bankrekening SET saldo = 400 WHERE rekeningnummer = 2");
+```
+- Voer bovenstaande code uit en inspecteer de database. Wat is het saldo van rekeningnummer 1 en wat is het saldo van rekeningnummer 2?
+- Pas in de database het saldo van rekening 1 terug aan naar '1000'
+- Voeg nu transacties toe rond deze 2 statements, en voer de code opnieuw uit.
+- Wat is nu het saldo van rekeningnummer 1?
+
+## Oefening 7
+- Maak een DAO die de gegevens van de 'deejays' tabel gaat uitlezen. De deejays tabel bevat 2 text(String) velden, nl. 'naam' en 'genre'. 
+- Voeg 2 methodes toe aan de dao: getByName(String name) en update(Deejay deejay)
+
+## Extra oefening
+- Maak een class die een foto uitleest van de harde schijf, en deze in de database stopt(BLOB).
 
 ## Extra oefening
 - Maak een class die een connectie maakt met de tabel 'deejays' en voor elke dj in de tabel de kolommen 'naam' en 'genre' naar de console schrijft
