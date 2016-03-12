@@ -72,6 +72,13 @@ statement2.executeUpdate("UPDATE bankrekening SET saldo = 400 WHERE rekeningnumm
 ## Oefening 7
 - Maak een DAO die de gegevens van de 'deejays' tabel gaat uitlezen. De deejays tabel bevat 2 text(String) velden, nl. 'naam' en 'genre'. 
 - Voeg 2 methodes toe aan de dao: getByName(String name) en update(Deejay deejay)
+- De update methode gaat het genre van de deejay updaten, gebruik de naam van de deejay als 'sleutel' voor de database(deze moet dus uniek zijn en kan je niet updaten via de DAO)
+
+## Oefening 8:
+- Maak een nieuw maven project aan
+- Voeg een dependency toe op je database driver
+- Maak in je database een tabel STUDENT met als velden (ID, NAAM, STUDENTENCLUB, GEBOORTEDATUM)
+- Maak een DAO aan voor Student (zie cursus p.68 en volgende voor inspiratie) en voorzie methodes #getStudentById(id), #updateStudent(student)
 
 ## Extra oefening
 - Maak een class die een foto uitleest van de harde schijf, en deze in de database stopt(BLOB).
