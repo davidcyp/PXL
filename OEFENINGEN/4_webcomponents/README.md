@@ -26,3 +26,4 @@ Soms wil je gewoon snel een web-applicatie opzetten zonder dat je die wil deploy
 - gebruik een GET operatie op <server/localhost>:<poort>/student om een lijst van studenten te tonen in je browser
 - gebruik een POST operatie op <server/localhost>:<poort>/student om een student aan je database toe te voegen
 - gebruik een GET operatie op <server/localhost>:<poort>/student/<ID> om de gegevens van 1 student op te halen
+- Het staat je vrij een dao of statements te gebruiken
