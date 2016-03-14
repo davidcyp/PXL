@@ -13,7 +13,7 @@ Download en installeer Tomcat https://tomcat.apache.org/download-90.cgi en volg 
 - voer het commando mvn package cargo:deploy uit
 - Surf naar http://localhost:8080/<naam van je maven artifact>
 
-## Extra oefening(niét relevant voor het examen, just for fun): REST via Spark framework (oftewel de easy way)
+## Extra oefening - herhaling Maven, JDBC en DAO + leer het gebruik van POST en GET REST (adhv Spark framework)
 
 Soms wil je gewoon snel een web-applicatie opzetten zonder dat je die wil deployen op een application server. Daarvoor zijn lightweight-frameworks ontstaan zoals Spark. Herinner je je nog ons "Hello World" voorbeeld uit les 1, waar je met je browser naar een url moest surfen? Wel, eigenlijk is dat een voorbeeld hiervan. Deze applicatie verbergt de complexiteit van het deployen(in de appserver) en configureren(in de web.xml) voor de programmeur.
 
