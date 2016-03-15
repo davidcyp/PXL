@@ -21,7 +21,7 @@ Soms wil je gewoon snel een web-applicatie opzetten zonder dat je die wil deploy
 - Kopieer in je Maven pom de settings voor Java 8 (zie oefening 1, of poms uit les 1 en les 2)
 - Voeg de dependency op het Spark framework toe (zie les 1)
 - Voeg de dependency op je database driver toe (zie les 3)
-- Maak in je database een tabel 'leerlingen' aan met velden 'naam', 'geboortejaar', 'geslacht' en 'stad'.
+- Herbruik de tabel STUDENT met velden ID, NAAM, STUDENTENCLUB, GEBOORTEDATUM van les 3 oefening 8
 - Analyseer de code van les 1, en maak naar analogie een class aan met het Spark framework die voldoet aan de REST principes, nl:
 - gebruik een GET operatie op <server/localhost>:<poort>/student om een lijst van studenten te tonen in je browser
 - gebruik een POST operatie op <server/localhost>:<poort>/student om een student aan je database toe te voegen
