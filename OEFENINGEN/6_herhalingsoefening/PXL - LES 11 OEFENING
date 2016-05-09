@@ -1,0 +1,59 @@
+PXL - Oefening ORM
+
+TODO :
+
+- deejay oefening (web/backend) herschrijven met HibernateDAO
+
+- nieuwe oefening:
+   - domein model + gelaagd model uittekenen
+   - maven .m2 dependencies (zonder internet) uitproberen
+   - fixes cfr. Tom (class.forname in servlet vs /tomcat/lib folder)
+   - maven extra settings voor java 1.8
+   - versie verschillen cursus Noël oplijsten + fix aanbieden
+   - "generated" web.xml versie (maven f*ckup)
+
+
+Video-rating applicatie (of HotOrNot? -> hoe navigeren naar volgende record --> SESSIE trackt wélke je laatste record was, and keeps track of rated/voted videos)
+
+domein: (progressief opbouwen)
+
+- video
+  - enum: youtube, vimeo
+  - url:
+  - avg-rating:
+  - category (eg. gaming, football, premier league, music, codeIgniter, epic fails..)
+
+
+- voter: 
+  - username
+  - dob
+  - rated-videos
+  - totalNrOfVotes 
+
+- voter-interests
+  - 1:n relatie
+
+  Introduce ranking, voters met hogere rankings unlocken nieuwe videos
+
+
+Toevoegen video:
+- ENUM video-categories mag overlopen worden in JSP(combobox, radio, ..)  
+
+
+STAR RATING:
+https://codepen.io/lsirivong/pen/ekBxI
+
+EMBED YT SNIPPET:
+
+  <html><body>
+<iframe width="420" height="315"
+src="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=1">
+</iframe>
+</body></html>
+
+
+- Enumeratie + date(temporal)
+- op bestaande tabellen
+- op tabellen gegenereerd van uit het domein
+
+- 2 persistence contexts?? bvb eigen database vs "mijn" database op het web waarin ook dingen staan (redirect naar "web-app" via browser??, of zelfs eigen persistence-context naar remote database --> soft-links)
