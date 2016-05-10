@@ -1,0 +1,22 @@
+- Pas de persistence.xml aan zodanig dat je connecteert naar je eigen (lokale) database
+
+- Pas eventueel de driver aan als je geen MySQL database zou willen connecteren
+
+- Telkens je Main.java uitvoert, worden alle tabellen gedropt en opnieuw gecreëerd.
+Je kan er dus rustig op los experimenteren en telkens in de database gaan kijken
+welke impact de code/annotatie wijziging heeft op je
+
+- In Main.java wordt momenteel enkel de Deejay instance gepersisteerd. Pas de code aan
+zodat ook de andere entiteiten gepersisteerd worden. Gebruik waar mogelijk een CascadeType!
+
+- Pas de code opnieuw aan, en voeg meerdere Deejays toe aan de Party
+
+- Pas de code aan, en voeg meerdere transacties toe. Binnen die transacties experimenteer
+je met cascadeType en wijzigingen aan referenced/referee objecten. Verifieer in de database
+de impact van je wijzigingen.
+
+- Kijk ook eens op     <!-- Hier kan je een goede uitleg vinden over de schema-generation.database.action values -->
+                       <!-- http://www.thoughts-on-java.org/standardized-schema-generation-data-loading-jpa-2-1/ -->
+
+Als je meer wil weten over de verschillende configurat-opties mbt automatische creatie
+van je tabellen
