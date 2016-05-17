@@ -7,10 +7,10 @@ TODO :
 - nieuwe oefening:
    - domein model + gelaagd model uittekenen
    - maven .m2 dependencies (zonder internet) uitproberen
-   - fixes cfr. Tom (class.forname in servlet vs /tomcat/lib folder)
-   - maven extra settings voor java 1.8
-   - versie verschillen cursus Noël oplijsten + fix aanbieden
-   - "generated" web.xml versie (maven f*ckup)
+   - OKEE - fixes cfr. Tom (class.forname in servlet vs /tomcat/lib folder)
+   - OKEE - maven extra settings voor java 1.8
+   - OKEE ZELF UIT TE ZOEKEN - versie verschillen cursus Noël oplijsten + fix aanbieden
+   - HUH OKEE ZEKER?  - "generated" web.xml versie (maven f*ckup)
 
 
 Video-rating applicatie (of HotOrNot? -> hoe navigeren naar volgende record --> SESSIE trackt wélke je laatste record was, and keeps track of rated/voted videos)
