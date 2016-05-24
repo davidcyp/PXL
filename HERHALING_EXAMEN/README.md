@@ -116,7 +116,7 @@ We spreken af van niet rechtstreeks onze domeinobjecten te exposen in de view. D
         - beschikbaar op URI /video
         - GET naar /video toont een leeg invulformulier (JSP) waarop je een nieuwe video kan toevoegen
         - POST naar /video voegt een video toe (service#add of service#update, afhankelijk of de video al een id heeft of niet)
-        - GET naar /video/all haalt alle videos op
+        - GET naar /video/all haalt alle videos op (gebruik eventueel JSTL tag <c:forEach> om alle videos te tonen op je JSP
         - GET naar /video?id=<id> haalt de video met <id> op
     - AdminServlet
         - beschikbaar op URI /admin
@@ -171,3 +171,6 @@ Beschikbare dependencies:
 
     </dependencies>
 ```
+## VERVOLG
+- voeg aan de videoService een methode toe die (via JPA) alle videos gaat ophalen voor een gegeven category.name (nvdr. video heeft een property category, dus...)
+- oefen de @Column en @Table annotaties nog eens in (indien je ze nog niet gebruikt heb)
