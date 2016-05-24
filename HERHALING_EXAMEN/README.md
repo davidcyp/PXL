@@ -1,6 +1,9 @@
 ## Belangrijk: vooraleer je begint
 (!) Lees eerst de opdracht door van de 1e tot de laatste zin.
 
+(!) voeg volgende lijn aan persistence.xml toe als je je database tabellen wil laten genereren :             <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+
+
 ##### Maven dependencies
 Kopieer de aangeleverde libraries naar je maven repository folder. Deze kan je standaard terugvinden op ~/.m2/repository. Je kan hem desgewenst ook herconfigureren in de Maven settings.xml, die terug te vinden is op MAVEN_HOME/conf/settings.xml.
 
