@@ -3,7 +3,18 @@
 
 (!) voeg volgende lijn aan persistence.xml toe als je je database tabellen wil laten genereren :             <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
 
+voeg ook volgende lijn toe:
+            <property name="javax.persistence.schema-generation.drop-script-source" value="META-INF/disable_constraints.sql"/>
+
+en voeg een file META-INF/disable_constraints.sql toe met volgende inhoud:
+
+```
+SET FOREIGN_KEY_CHECKS = 0;
+```
+
 (!) Zie onderaan voor een Main class waarmee je snel kan controleren of je persistence unit correct geconfigureerd is en waarmee je - indien je bovenstaande lijn aan persistence.xml toegevoegd hebt - je ook je schema kan aanmaken.
+
+
 
 
 ##### Maven dependencies
