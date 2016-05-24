@@ -3,6 +3,8 @@
 
 (!) voeg volgende lijn aan persistence.xml toe als je je database tabellen wil laten genereren :             <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
 
+(!) Zie onderaan voor een Main class waarmee je snel kan controleren of je persistence unit correct geconfigureerd is en waarmee je - indien je bovenstaande lijn aan persistence.xml toegevoegd hebt - je ook je schema kan aanmaken.
+
 
 ##### Maven dependencies
 Kopieer de aangeleverde libraries naar je maven repository folder. Deze kan je standaard terugvinden op ~/.m2/repository. Je kan hem desgewenst ook herconfigureren in de Maven settings.xml, die terug te vinden is op MAVEN_HOME/conf/settings.xml.
@@ -177,3 +179,21 @@ Beschikbare dependencies:
 ## VERVOLG
 - voeg aan de videoService een methode toe die (via JPA) alle videos gaat ophalen voor een gegeven category.name (nvdr. video heeft een property category, dus...)
 - oefen de @Column en @Table annotaties nog eens in (indien je ze nog niet gebruikt heb)
+
+## Voorbeeld main.xml
+
+```
+public class Main {
+
+    public static void main(String[] args) {
+        EntityManagerFactory factory = Persistence.createEntityManagerFactory("videos");
+        EntityManager entityManager = factory.createEntityManager();
+        EntityTransaction transaction = entityManager.getTransaction();
+        transaction.begin();
+        ... 
+        transaction.commit();
+
+        entityManager.close();
+    }
+}
+```
